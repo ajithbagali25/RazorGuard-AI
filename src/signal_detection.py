@@ -23,6 +23,12 @@ def detect_suspicious_signals(row):
             "reason": "The customer is new and has limited purchase history."
         })
 
+    if amount > 10:
+        signals.append({
+            "weight": 1,
+            "reason": "The transaction amount is above ₹10."
+        })
+
     if avg_order_value > 0 and amount > (2.5 * avg_order_value):
         signals.append({
             "weight": 20,
