@@ -556,10 +556,10 @@ st.markdown(
             RISKORA
         </div>
         <div style="font-size:1.55rem;font-weight:800;margin-top:.15rem;">
-            Payment safety, before you pay.
+            CHECK BEFORE YOU PAY.
         </div>
         <div style="font-size:.88rem;opacity:.82;margin-top:.25rem;">
-            Intelligent checks with a simple human decision.
+            A quiet safety layer between you and your payment.
         </div>
     </div>
     """,
@@ -572,480 +572,164 @@ st.markdown(
 st.markdown(
     """
     <style>
-/* Riskora Premium Indigo + Lavender Theme */
-:root {
-    --riskora-ink: #17142F;
-    --riskora-indigo: #29234F;
-    --riskora-purple: #7567E8;
-    --riskora-lavender: #F1F0FA;
-    --riskora-lavender-deep: #E7E4F7;
-    --riskora-card: #FFFFFF;
-    --riskora-muted: #716F80;
-    --riskora-border: #E4E1EF;
-    --riskora-green: #1FA774;
-    --riskora-amber: #D9972B;
-    --riskora-red: #E0525D;
-}
-
-.stApp {
-    background:
-        radial-gradient(circle at 88% 0%, rgba(117, 103, 232, 0.10), transparent 28%),
-        linear-gradient(135deg, #F7F6FC 0%, #F1F0FA 52%, #FFFFFF 100%);
-    color: #17142F;
-}
-
-[data-testid="stHeader"] {
-    background: transparent;
-}
-
-.riskora-card {
-    background: #FFFFFF !important;
-    border: 1px solid #E4E1EF !important;
-    box-shadow: 0 14px 38px rgba(23, 20, 47, 0.075) !important;
-    border-radius: 18px !important;
-}
-
-.riskora-soft {
-    background: #F1F0FA !important;
-    border: 1px solid #E7E4F7 !important;
-    border-radius: 14px !important;
-}
-
-.riskora-eyebrow {
-    color: #7567E8 !important;
-    letter-spacing: .12em !important;
-    font-weight: 800 !important;
-}
-
-.riskora-muted {
-    color: #716F80 !important;
-}
-
-h1, h2, h3, h4, p, label {
-    color: #17142F;
-}
-
-button[kind="primary"] {
-    background: linear-gradient(135deg, #7567E8, #6254D7) !important;
-    border: 0 !important;
-    color: #FFFFFF !important;
-    box-shadow: 0 8px 20px rgba(117, 103, 232, .23) !important;
-    border-radius: 10px !important;
-}
-
-button[kind="primary"]:hover {
-    background: linear-gradient(135deg, #6254D7, #5144C6) !important;
-}
-
-input, textarea {
-    border-radius: 10px !important;
-    border-color: #E4E1EF !important;
-    background: #FFFFFF !important;
-}
-
-input:focus, textarea:focus {
-    border-color: #7567E8 !important;
-    box-shadow: 0 0 0 1px #7567E8 !important;
-}
-
-div[data-baseweb="select"] > div {
-    border-radius: 10px !important;
-    border-color: #E4E1EF !important;
-}
-
-.stRadio [data-baseweb="radio"] {
-    border-radius: 10px;
-}
-
-.riskora-brand-panel {
-    background: linear-gradient(160deg, #17142F 0%, #211C43 55%, #29234F 100%);
-    color: #FFFFFF;
-    border-radius: 22px;
-    padding: 1.4rem 1.5rem;
-    box-shadow: 0 18px 45px rgba(23, 20, 47, .18);
-}
-
-.riskora-brand-panel h1,
-.riskora-brand-panel h2,
-.riskora-brand-panel h3,
-.riskora-brand-panel p {
-    color: #FFFFFF !important;
-}
-
-.riskora-brand-panel .riskora-eyebrow {
-    color: #B8B0FF !important;
-}
-
-.riskora-status-safe {
-    border-left: 5px solid #1FA774 !important;
-}
-
-.riskora-status-caution {
-    border-left: 5px solid #D9972B !important;
-}
-
-.riskora-status-stop {
-    border-left: 5px solid #E0525D !important;
-}
-</style>
-<style>
+    /* Riskora Electric Aurora — 80% controlled dark neutral / 20% electric colour */
     :root {
-        --riskora-ink: #172033;
-        --riskora-muted: #667085;
-        --riskora-line: #e7eaf0;
-        --riskora-bg: #f6f7fb;
-        --riskora-card: #ffffff;
-        --riskora-purple: #6d5dfc;
-        --riskora-purple-dark: #5144d8;
-        --riskora-blue: #0F9D8A;
-        --riskora-green: #159570;
-        --riskora-green-bg: #ecfbf5;
-        --riskora-amber: #b7791f;
-        --riskora-amber-bg: #fff8e8;
-        --riskora-red: #d14343;
-        --riskora-red-bg: #fff0f0;
+        --riskora-bg: #090C12;
+        --riskora-surface: #10151F;
+        --riskora-surface-2: #151C29;
+        --riskora-surface-3: #1B2433;
+        --riskora-text: #F4F7FF;
+        --riskora-muted: #8B96AA;
+        --riskora-border: #263142;
+        --riskora-cyan: #28F0D0;
+        --riskora-blue: #5267FF;
+        --riskora-coral: #FF5C8A;
+        --riskora-yellow: #FFD166;
+        --riskora-green: #42E6A4;
     }
 
     .stApp {
         background:
-            radial-gradient(circle at 8% 0%, rgba(109,93,252,.10), transparent 28%),
-            radial-gradient(circle at 95% 5%, rgba(59,130,246,.08), transparent 24%),
-            var(--riskora-bg);
+            radial-gradient(circle at 88% -5%, rgba(82,103,255,.13), transparent 24%),
+            radial-gradient(circle at 8% 18%, rgba(40,240,208,.055), transparent 22%),
+            #090C12;
+        color: var(--riskora-text);
     }
-
-    .block-container {
-        max-width: 1180px;
-        padding-top: 1.3rem;
-        padding-bottom: 4rem;
-    }
-
     [data-testid="stHeader"] { background: transparent; }
-    [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #17142e 0%, #241d4a 58%, #302563 100%);
-    }
-    [data-testid="stSidebar"] * { color: #f7f7ff !important; }
-    [data-testid="stSidebar"] [data-testid="stRadio"] label {
-        border-radius: 12px;
-        padding: .45rem .6rem;
-    }
+    .block-container { max-width: 1180px; padding-top: 1.25rem; padding-bottom: 3rem; }
 
-    h1, h2, h3, h4 {
-        color: var(--riskora-ink) !important;
-        letter-spacing: -0.02em;
+    h1,h2,h3,h4,p,label,span { color: var(--riskora-text); }
+    h1,h2,h3 { letter-spacing: -.035em; }
+    .riskora-muted { color: var(--riskora-muted) !important; }
+    .riskora-eyebrow {
+        color: var(--riskora-cyan) !important;
+        letter-spacing: .16em !important;
+        font-weight: 850 !important;
+        font-size: .67rem !important;
     }
-
-    .riskora-brand {
-        display: flex;
-        align-items: center;
-        gap: .75rem;
-        margin-bottom: .8rem;
-    }
-    .riskora-logo {
-        width: 44px;
-        height: 44px;
-        border-radius: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #6d5dfc, #0F9D8A);
-        color: white;
-        font-size: 1.35rem;
-        box-shadow: 0 10px 28px rgba(81,68,216,.25);
-    }
-    .riskora-name {
-        font-size: 1.35rem;
-        font-weight: 800;
-        color: var(--riskora-ink);
-    }
-    .riskora-tag {
-        color: var(--riskora-muted);
-        font-size: .88rem;
-    }
-
-    .riskora-hero {
-        padding: 1.55rem 1.7rem;
-        border-radius: 24px;
-        color: white;
-        background:
-            radial-gradient(circle at 85% 20%, rgba(255,255,255,.18), transparent 22%),
-            linear-gradient(135deg, #211b50 0%, #5144d8 48%, #0F9D8A 100%);
-        box-shadow: 0 18px 45px rgba(44,39,105,.20);
-        margin: .5rem 0 1.25rem 0;
-    }
-    .riskora-hero h1, .riskora-hero h2, .riskora-hero h3 {
-        color: white !important;
-        margin-bottom: .25rem;
-    }
-    .riskora-hero p { color: rgba(255,255,255,.86); margin: 0; }
 
     .riskora-card {
-        background: var(--riskora-card);
-        border: 1px solid var(--riskora-line);
-        border-radius: 18px;
-        padding: 1.15rem 1.25rem;
-        box-shadow: 0 8px 26px rgba(28,36,55,.05);
-        margin-bottom: .9rem;
+        background: var(--riskora-surface) !important;
+        border: 1px solid var(--riskora-border) !important;
+        box-shadow: 0 18px 48px rgba(0,0,0,.25) !important;
+        border-radius: 20px !important;
     }
     .riskora-soft {
-        background: #fafaff;
-        border: 1px solid #e7e4ff;
-        border-radius: 16px;
-        padding: 1rem 1.1rem;
-    }
-    .riskora-eyebrow {
-        text-transform: uppercase;
-        letter-spacing: .09em;
-        font-size: .72rem;
-        font-weight: 800;
-        color: #6d5dfc;
-        margin-bottom: .25rem;
-    }
-    .riskora-muted { color: var(--riskora-muted); }
-
-    .riskora-state {
-        border-radius: 20px;
-        padding: 1.2rem 1.35rem;
-        margin: .8rem 0 1rem 0;
-        border: 1px solid;
-    }
-    .riskora-state-safe {
-        background: var(--riskora-green-bg);
-        border-color: #bcebd9;
-    }
-    .riskora-state-caution {
-        background: var(--riskora-amber-bg);
-        border-color: #f1d79e;
-    }
-    .riskora-state-risk {
-        background: var(--riskora-red-bg);
-        border-color: #f2b5b5;
-    }
-    .riskora-state-title {
-        font-size: 1.3rem;
-        font-weight: 850;
-        margin-bottom: .25rem;
-        color: var(--riskora-ink);
+        background: var(--riskora-surface-2) !important;
+        border: 1px solid #293548 !important;
+        border-radius: 16px !important;
     }
 
-    .riskora-chip {
-        display: inline-block;
-        padding: .35rem .65rem;
-        border-radius: 999px;
-        background: #f0edff;
-        color: #5144d8;
-        font-size: .78rem;
-        font-weight: 750;
-        margin-right: .35rem;
+    .riskora-brand-panel {
+        background: linear-gradient(145deg, #0D121B 0%, #111827 62%, #151B2A 100%);
+        color: var(--riskora-text);
+        border: 1px solid #263142;
+        border-radius: 24px;
+        padding: 1.7rem 1.75rem;
+        margin-bottom: 1.15rem;
+        box-shadow: 0 22px 60px rgba(0,0,0,.30);
+        position: relative;
+        overflow: hidden;
+    }
+    .riskora-brand-panel:before {
+        content: ""; position:absolute; width:280px; height:280px; border-radius:50%;
+        right:-125px; top:-150px; background:rgba(40,240,208,.10);
+        box-shadow: -90px 100px 150px rgba(82,103,255,.10);
+    }
+    .riskora-brand-panel:after {
+        content: ""; position:absolute; left:55%; bottom:-90px; width:210px; height:210px;
+        border-radius:50%; background:rgba(82,103,255,.075); filter:blur(8px);
+    }
+    .riskora-brand-panel h1,.riskora-brand-panel h2,.riskora-brand-panel h3,.riskora-brand-panel p { color:#F4F7FF !important; }
+    .riskora-brand-panel .riskora-eyebrow { color:var(--riskora-cyan) !important; }
+
+    button[kind="primary"] {
+        background: var(--riskora-cyan) !important;
+        border: 1px solid var(--riskora-cyan) !important;
+        color: #07100F !important;
+        box-shadow: 0 0 0 1px rgba(40,240,208,.08), 0 10px 28px rgba(40,240,208,.16) !important;
+        border-radius: 12px !important; font-weight: 850 !important;
+    }
+    button[kind="primary"]:hover {
+        background: #7CFFE9 !important; border-color:#7CFFE9 !important; color:#07100F !important;
+        box-shadow: 0 0 24px rgba(40,240,208,.22) !important;
+    }
+    div[data-testid="stButton"] > button {
+        border-radius:12px !important; min-height:44px !important; font-weight:750 !important;
+        background:#151C29 !important; color:#F4F7FF !important; border:1px solid #2A3547 !important;
+    }
+    div[data-testid="stButton"] > button:hover { border-color:var(--riskora-cyan) !important; color:var(--riskora-cyan) !important; }
+
+    input,textarea {
+        border-radius:12px !important; border:1px solid #2A3547 !important;
+        background:#0E141E !important; color:#F4F7FF !important;
+    }
+    input::placeholder, textarea::placeholder {
+        color:#718097 !important; opacity:1 !important;
+    }
+    input:focus,textarea:focus {
+        border-color:var(--riskora-cyan) !important; box-shadow:0 0 0 1px var(--riskora-cyan), 0 0 18px rgba(40,240,208,.08) !important;
+    }
+    div[data-baseweb="select"] > div {
+        border-radius:12px !important; border-color:#2A3547 !important; background:#0E141E !important;
+    }
+    div[data-testid="stRadio"] label { border-radius:12px !important; }
+    div[data-testid="stMetric"] {
+        background:#111925 !important; border:1px solid #293548 !important;
+        border-radius:14px !important; padding:.8rem !important;
     }
 
-    .riskora-section-title {
-        font-size: 1.05rem;
-        font-weight: 800;
-        color: var(--riskora-ink);
-        margin: .35rem 0 .65rem 0;
+    .riskora-status-safe {
+        background:#0D211C !important; border:1px solid #1B5B46 !important;
+        border-left:6px solid var(--riskora-green) !important; border-radius:18px !important;
     }
-
-    .riskora-footer {
-        margin-top: 2rem;
-        padding-top: 1rem;
-        border-top: 1px solid var(--riskora-line);
-        color: var(--riskora-muted);
-        font-size: .78rem;
-        text-align: center;
+    .riskora-status-caution {
+        background:#241E0E !important; border:1px solid #6B5520 !important;
+        border-left:6px solid var(--riskora-yellow) !important; border-radius:18px !important;
     }
-
-    div.stButton > button {
-        border-radius: 12px;
-        min-height: 2.65rem;
-        font-weight: 750;
-        border: 1px solid #dfe3ec;
-        transition: all .15s ease;
-    }
-    div.stButton > button:hover {
-        border-color: #6d5dfc;
-        color: #5144d8;
-        box-shadow: 0 5px 16px rgba(109,93,252,.12);
-    }
-    div.stButton > button[kind="primary"] {
-        background: linear-gradient(135deg, #6d5dfc, #0F9D8A);
-        color: white;
-        border: none;
-    }
-
-    [data-testid="stRadio"] > div { gap: .45rem; }
-    [data-testid="stRadio"] label {
-        background: white;
-        border: 1px solid #e1e5ed;
-        border-radius: 12px;
-        padding: .5rem .75rem;
-    }
-
-    [data-testid="stNumberInput"] input,
-    [data-testid="stTextInput"] input,
-    [data-testid="stTextArea"] textarea {
-        border-radius: 12px;
-        border: 1px solid #dfe3ec;
-        background: white;
-    }
-
-    [data-testid="stMetric"] {
-        background: white;
-        border: 1px solid var(--riskora-line);
-        border-radius: 16px;
-        padding: .85rem 1rem;
-        box-shadow: 0 5px 18px rgba(28,36,55,.04);
-    }
-
-    [data-testid="stExpander"] {
-        border: 1px solid var(--riskora-line);
-        border-radius: 14px;
-        background: rgba(255,255,255,.7);
-    }
-
-    .riskora-test-banner {
-        padding: .75rem 1rem;
-        border-radius: 14px;
-        background: linear-gradient(90deg, #EAF8F4, #eff8ff);
-        border: 1px solid #dfe5ff;
-        color: #3c4770;
-        margin-bottom: 1rem;
-    }
-    
-/* ============================================================
-   Riskora Dual-Platform Responsive UI
-   Desktop remains wide; phones switch to a touch-first layout.
-   ============================================================ */
-
-@media (max-width: 900px) {
-    .block-container {
-        padding: 1rem 1rem 2rem 1rem !important;
-        max-width: 100% !important;
+    .riskora-status-stop {
+        background:#28131B !important; border:1px solid #703042 !important;
+        border-left:6px solid var(--riskora-coral) !important; border-radius:18px !important;
     }
 
     [data-testid="stSidebar"] {
-        display: none !important;
+        background:#080B10 !important; border-right:1px solid #1D2633 !important;
     }
+    [data-testid="stSidebar"] * { color:#C8D0DE !important; }
+    hr { border-color:#202A38 !important; }
 
-    [data-testid="stSidebarCollapsedControl"] {
-        display: none !important;
+    @media (max-width:900px) {
+        .block-container { padding:.75rem .8rem 2rem !important; max-width:100% !important; }
+        [data-testid="stSidebar"],[data-testid="stSidebarCollapsedControl"] { display:none !important; }
+        .riskora-brand-panel { border-radius:19px !important; padding:1.2rem 1.15rem !important; }
+        .riskora-card { border-radius:17px !important; }
+        div[data-testid="stHorizontalBlock"] { flex-wrap:wrap !important; gap:.65rem !important; }
+        div[data-testid="stHorizontalBlock"] > div[data-testid="column"] { min-width:100% !important; flex:1 1 100% !important; }
+        div[data-testid="stHorizontalBlock"]:has(button) > div[data-testid="column"] { min-width:0 !important; flex:1 1 48% !important; }
+        div[data-testid="stButton"] > button { width:100% !important; min-height:48px !important; }
+        div[data-testid="stNumberInput"] input,div[data-testid="stTextInput"] input { min-height:48px !important; font-size:1rem !important; }
+        div[data-testid="stRadio"] > div { gap:.45rem !important; flex-wrap:wrap !important; }
+        div[data-testid="stRadio"] label {
+            border:1px solid #2A3547 !important; border-radius:12px !important; padding:.65rem .7rem !important;
+            background:#111925 !important; flex:1 1 30% !important; justify-content:center !important;
+        }
+        iframe { max-width:100% !important; }
     }
-
-    .riskora-brand-panel {
-        border-radius: 18px !important;
-        padding: 1.15rem 1.1rem !important;
+    @media (max-width:520px) {
+        .block-container { padding:.45rem .6rem 1.5rem !important; }
+        .riskora-brand-panel { padding:1rem !important; border-radius:17px !important; }
+        .riskora-card { padding:.72rem !important; margin-bottom:.65rem !important; }
+        .riskora-card h3 { font-size:1.28rem !important; margin:.28rem 0 .55rem !important; }
+        .riskora-eyebrow { font-size:.60rem !important; }
+        div[data-testid="stNumberInput"] { margin-bottom:.1rem !important; }
+        div[data-testid="stNumberInput"] input { min-height:43px !important; }
+        div[data-testid="stRadio"] { margin-bottom:.15rem !important; }
+        div[data-testid="stRadio"] label { flex:1 1 30% !important; min-height:40px !important; padding:.42rem .5rem !important; }
+        .riskora-card [data-testid="stCaptionContainer"] { margin-top:.1rem !important; }
+        .riskora-card [data-testid="stTextInput"] { margin-top:.05rem !important; }
+        .riskora-card [data-testid="stExpander"] { margin-top:.45rem !important; }
     }
-
-    .riskora-card {
-        border-radius: 16px !important;
-    }
-
-    /* Stack Streamlit columns on phones/tablets. */
-    div[data-testid="stHorizontalBlock"] {
-        flex-wrap: wrap !important;
-        gap: .7rem !important;
-    }
-
-    div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
-        min-width: 100% !important;
-        flex: 1 1 100% !important;
-    }
-
-    /* Keep button groups usable as two-up touch targets where possible. */
-    div[data-testid="stHorizontalBlock"]:has(button) > div[data-testid="column"] {
-        min-width: 0 !important;
-        flex: 1 1 48% !important;
-    }
-
-    div[data-testid="stButton"] > button {
-        width: 100% !important;
-        min-height: 46px !important;
-        border-radius: 11px !important;
-        font-size: .92rem !important;
-    }
-
-    div[data-testid="stNumberInput"] input,
-    div[data-testid="stTextInput"] input {
-        min-height: 46px !important;
-        font-size: 1rem !important;
-    }
-
-    div[data-testid="stRadio"] > div {
-        gap: .45rem !important;
-        flex-wrap: wrap !important;
-    }
-
-    div[data-testid="stRadio"] label {
-        border: 1px solid #E4E1EF !important;
-        border-radius: 11px !important;
-        padding: .62rem .72rem !important;
-        background: #FFFFFF !important;
-        flex: 1 1 30% !important;
-        justify-content: center !important;
-    }
-
-    div[data-testid="stMetric"] {
-        background: #F1F0FA !important;
-        border-radius: 12px !important;
-        padding: .7rem !important;
-    }
-
-    iframe {
-        max-width: 100% !important;
-    }
-}
-
-@media (max-width: 520px) {
-    .block-container {
-        padding: .7rem .7rem 1.6rem .7rem !important;
-    }
-
-    .riskora-brand-panel {
-        padding: 1rem !important;
-        border-radius: 16px !important;
-    }
-
-    .riskora-brand-panel div[style*="font-size:1.55rem"] {
-        font-size: 1.28rem !important;
-        line-height: 1.18 !important;
-    }
-
-    h1 {
-        font-size: 1.5rem !important;
-    }
-
-    h2 {
-        font-size: 1.25rem !important;
-    }
-
-    h3 {
-        font-size: 1.05rem !important;
-    }
-
-    .riskora-card {
-        padding: .95rem !important;
-        margin-bottom: .7rem !important;
-    }
-
-    .riskora-muted {
-        font-size: .82rem !important;
-        line-height: 1.45 !important;
-    }
-
-    .riskora-eyebrow {
-        font-size: .66rem !important;
-    }
-
-    div[data-testid="stRadio"] label {
-        flex: 1 1 100% !important;
-        min-height: 44px !important;
-    }
-
-    div[data-testid="stButton"] > button {
-        min-height: 48px !important;
-    }
-}
-
-</style>
+    </style>
     """,
     unsafe_allow_html=True,
 )
